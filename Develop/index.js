@@ -39,6 +39,7 @@ ${answers.test}
 
 ## License
 
+${answers.license}
 
 
 ---
