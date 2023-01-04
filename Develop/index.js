@@ -4,12 +4,13 @@ const fs = require("fs");
 
 // TODO: Create an array of questions for user input
 //const questions = [];
-const generateReadMe = ({title, description, instructions, usage, contribution, test, github, email}) =>
-`# ${title}
+const generateReadMe = (answers) =>
+`# ${answers.title}
+![GitHub License](https://img.sheilds.io/badge/license-${answers.license}-blue/)
 
 ## Description
 
-${description}
+${answers.description}
 
 ## Table of Contents 
 
@@ -22,30 +23,30 @@ ${description}
 
 ## Installation
 
-${instructions}
+${answers.instructions}
 
 ## Usage
 
-${usage}
+${answers.usage}
 
 ## Contribution
 
-${contribution}
+${answers.contribution}
 
 ## Testing
 
-${test}
+${answers.test}
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+
 
 ---
 
 ## Questions
 Please contact me with any further questions.
-My GitHub username is ${github}, and here is the link to my account: https://github.com/${github}/ 
-My E-mail address is ${email}.
+My GitHub username is ${answers.github}, and here is the link to my account: https://github.com/${answers.github}/ 
+My E-mail address is ${answers.email}.
 `
 
 inquirer
@@ -90,6 +91,13 @@ inquirer
       name: 'email',
       message: 'Please enter your e-mail address.'
     },
+    {
+      type: "list",
+      message: "Please choose your license.",
+      name: "license",
+      choices: ["MIT", "apache 2.0", "MPL 1.1", "LGVLv2.1"],
+    },
+  
   ])
   // TODO: Create a function to write README file
   // function writeToFile(fileName, data) {}
