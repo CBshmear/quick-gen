@@ -7,6 +7,9 @@ This repo contains the code for a command line README boilerplate generator. It 
 To run this project on your own install the inquirer package using the command "npm i" in your command line.
 
 ## Usage 
+Here is a link to a walkthrough video of a sample readme that the app generated:
+https://drive.google.com/file/d/1ES3Tt0Xejy3RD58HnifRvq2aoPoZccmI/view
+
 run the index.js file with node to initialize the application. The command would be "node index.js"
 
 ## Credits 
