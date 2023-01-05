@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license) {
-    const badge = `https://img.sheilds.io/badge/license-${answers.license}-blue.svg`
+    const badge = `[![License](https://img.sheilds.io/badge/license-${answers.license}-blue.svg)](https://opensource.org/licenses/${answers.license})`
     return badge;
   }else {
     return "";
@@ -20,7 +20,10 @@ function renderLicenseSection(license) {}
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-
+  
+  ${renderLicenseBadge(data.license)}
+  
+  ${renderLicenseLink(data)}
 `;
 }
 

@@ -2,11 +2,15 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
+
+
 // TODO: Create an array of questions for user input
 //const questions = [];
 const generateReadMe = (answers) =>
 `# ${answers.title}
-![GitHub License](https://img.sheilds.io/badge/license-${answers.license}-blue/)
+
+[![License](https://img.shields.io/badge/license-${answers.license}-blue.svg)](https://opensource.org/licenses/${answers.license})
+
 
 ## Description
 
@@ -40,6 +44,8 @@ ${answers.test}
 ## License
 
 ${answers.license}
+(https://opensource.org/licenses/${answers.license})
+
 
 
 ---
@@ -96,7 +102,7 @@ inquirer
       type: "list",
       message: "Please choose your license.",
       name: "license",
-      choices: ["MIT", "apache 2.0", "MPL 1.1", "LGVLv2.1"],
+      choices: ["MIT", "apache2.0", "MPL1.1", "LGVLv2.1"],
     },
   
   ])
@@ -109,7 +115,6 @@ inquirer
       err ? console.log(err) : console.log('Successfully created README.md!')
     );
   });
-
 
 // TODO: Create a function to initialize app
 function init() {}
