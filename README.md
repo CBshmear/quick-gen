@@ -13,7 +13,7 @@ https://drive.google.com/file/d/1tR-gYOLUm4xHgUv0HjPDJ21XLbd0ZsTM/view
 run the index.js file with node to initialize the application. The command would be "node index.js"
 
 ## Credits 
-
+My instructor cwerness gave me some good pointers on this one
 ## License
 The MIT License (MIT)
 Copyright © 2023 <copyright holders>
