@@ -8,7 +8,7 @@ To run this project on your own install the inquirer package using the command "
 
 ## Usage 
 Here is a link to a walkthrough video of a sample readme that the app generated:
-https://drive.google.com/file/d/1ES3Tt0Xejy3RD58HnifRvq2aoPoZccmI/view
+https://drive.google.com/file/d/1tR-gYOLUm4xHgUv0HjPDJ21XLbd0ZsTM/view
 
 run the index.js file with node to initialize the application. The command would be "node index.js"
 
